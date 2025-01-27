@@ -1,0 +1,1231 @@
+\section{Equation of a Line in Slope-Intercept Form}
+
+The equation of a straight line can be expressed in various forms. One of the most commonly used forms is the \textit{slope-intercept form}. This form is useful because it provides direct information about the slope and the y-intercept of the line.
+
+\begin{definition}[Slope-Intercept Form]
+The slope-intercept form of the equation of a line is given by:
+
+\[
+y = mx + b
+\]
+
+where:
+\begin{itemize}
+    \item \( y \) is the dependent variable (the value of the output),
+    \item \( x \) is the independent variable (the value of the input),
+    \item \( m \) is the slope of the line, which represents the rate of change of \( y \) with respect to \( x \),
+    \item \( b \) is the y-intercept, which is the value of \( y \) when \( x = 0 \).
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Slope \( m \)]
+
+The slope \( m \) is a measure of how steep the line is. It is calculated as the ratio of the change in \( y \) (the vertical change) to the change in \( x \) (the horizontal change) between two points on the line:
+
+\[
+m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+\]
+\end{definition}
+
+This means that for every unit increase in \( x \), the value of \( y \) changes by \( m \) units.
+
+\begin{definition} [Y-Intercept (\( b \))]
+The y-intercept \( b \) is the point where the line crosses the y-axis. It is the value of \( y \) when \( x = 0 \). In the equation \( y = mx + b \), if we substitute \( x = 0 \), we get:
+
+\[
+y = m(0) + b \quad \Rightarrow \quad y = b
+\]
+
+Thus, the y-intercept is the value of \( y \) when the line intersects the y-axis.
+\end{definition}
+
+\begin{example}
+
+Consider the equation:
+
+\[
+y = 2x + 3
+\]
+
+In this equation:
+\begin{itemize}
+    \item The slope \( m = 2 \), which means that for every unit increase in \( x \), \( y \) increases by 2 units.
+    \item The y-intercept \( b = 3 \), which means the line crosses the y-axis at \( y = 3 \).
+\end{itemize}
+
+This is a line with a slope of 2 and a y-intercept of 3. The graph of this line is shown below:
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \),
+    ylabel = \( y \),
+    xmin=-5, xmax=5, ymin=-5, ymax=10,
+    grid = both,
+    domain=-5:5,
+    samples=100]
+    \addplot[blue, thick] {2*x + 3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{example}
+
+\subsection{Three Cases for Finding the Equation of a Line}
+
+We now discuss three different cases where you may need to find the equation of a line:
+
+\subsubsection{Case 1: When Two Points Are Given}
+If two points \((x_1, y_1)\) and \((x_2, y_2)\) are given, the equation of the line can be found in the following steps:
+
+1. Find the slope \( m \) using the formula:
+   \[
+   m = \frac{y_2 - y_1}{x_2 - x_1}
+   \]
+2. Use the slope \( m \) and one of the points, say \((x_1, y_1)\), to find the y-intercept \( b \) by substituting into the equation \( y = mx + b \).
+
+3. The final equation of the line will be:
+   \[
+   y = mx + b
+   \]
+
+\begin{example}
+ Given points \((1, 2)\) and \((3, 6)\), find the equation of the line.
+
+1. Calculate the slope:
+   \[
+   m = \frac{6 - 2}{3 - 1} = \frac{4}{2} = 2
+   \]
+
+2. Use the point \((1, 2)\) to find \( b \):
+   \[
+   2 = 2(1) + b \quad \Rightarrow \quad b = 0
+   \]
+
+3. The equation of the line is:
+   \[
+   y = 2x
+   \]
+
+\end{example}
+\subsubsection{Case 2: When the Slope and a Point Are Given}
+If the slope \( m \) and a point \((x_1, y_1)\) are given, you can use the point-slope form of the equation of a line, which is:
+
+\[
+y - y_1 = m(x - x_1)
+\]
+
+Then, solve for \( y \) to get the equation in slope-intercept form:
+
+\[
+y = m(x - x_1) + y_1
+\]
+
+\begin{example}
+
+ Given slope \( m = 3 \) and the point \((2, 4)\), find the equation of the line.
+
+1. Use the point-slope form:
+   \[
+   y - 4 = 3(x - 2)
+   \]
+
+2. Simplify to get the slope-intercept form:
+   \[
+   y = 3x - 6 + 4 \quad \Rightarrow \quad y = 3x - 2
+   \]
+
+\end{example}
+
+\subsubsection{Case 3: When the Y-Intercept and a Point Are Given}
+If the y-intercept \( b \) and a point \((x_1, y_1)\) are given, the equation of the line can be directly written as:
+
+\[
+y = mx + b
+\]
+
+To find the slope \( m \), use the given point \((x_1, y_1)\) and substitute into the equation:
+
+\[
+m = \frac{y_1 - b}{x_1}
+\]
+
+Then, the equation becomes:
+\[
+y = mx + b
+\]
+
+\begin{example}
+
+ Given \( b = 5 \) and the point \((2, 9)\), find the equation of the line.
+
+1. Calculate the slope:
+   \[
+   m = \frac{9 - 5}{2} = \frac{4}{2} = 2
+   \]
+
+2. The equation of the line is:
+   \[
+   y = 2x + 5
+   \]
+
+\end{example}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Graphing Linear Equations}
+
+Here we will graph the following linear equations:
+\begin{itemize}
+    \item \( 2x - y = 4 \)
+    \item \( 3x - 4y = 4 \)
+    \item \( y = 2 \)
+    \item \( x = 3 \)
+\end{itemize}
+
+We will graph each of these equations on the same coordinate plane.
+
+\subsubsection*{Graph of \( 2x - y = 4 \)}
+
+Rearrange the equation into slope-intercept form \( y = mx + b \) to make it easier to plot:
+
+\[
+2x - y = 4 \quad \Rightarrow \quad y = 2x - 4
+\]
+
+This is a line with slope \( m = 2 \) and y-intercept \( b = -4 \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \), ylabel = \( y \),
+    grid = both, 
+    xmin=-5, xmax=5, ymin=-10, ymax=10,
+    title = {Graph of \( 2x - y = 4 \)}
+]
+    \addplot[blue, thick] {2*x - 4};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Graph of \( 3x - 4y = 4 \)}
+
+Rearrange the equation into slope-intercept form:
+
+\[
+3x - 4y = 4 \quad \Rightarrow \quad 4y = 3x - 4 \quad \Rightarrow \quad y = \frac{3}{4}x - 1
+\]
+
+This is a line with slope \( m = \frac{3}{4} \) and y-intercept \( b = -1 \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \), ylabel = \( y \),
+    grid = both, 
+    xmin=-5, xmax=5, ymin=-10, ymax=10,
+    title = {Graph of \( 3x - 4y = 4 \)}
+]
+    \addplot[red, thick] {3/4*x - 1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Graph of \( y = 2 \)}
+
+This is a horizontal line at \( y = 2 \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \), ylabel = \( y \),
+    grid = both, 
+    xmin=-5, xmax=5, ymin=-10, ymax=10,
+    title = {Graph of \( y = 2 \)}
+]
+    \addplot[green, thick, domain=-5:5] {2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( x = 3 \)}
+
+This is a vertical line at \( x = 3 \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \), ylabel = \( y \),
+    grid = both, 
+    xmin=-5, xmax=5, ymin=-10, ymax=10,
+    title = {Graph of \( x = 3 \)}
+]
+    % \addplot[orange, thick, domain=-10:10] {3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+%%%
+We will now find the slope of the line given by the equation \( 2x - 3y = 12 \), and also evaluate the slope at a specific point, \( (x = -3, y = 1) \).
+
+\subsection*{Finding the Slope of the Line \( 2x - 3y = 12 \)}
+
+To find the slope of the line, we first need to rewrite the equation \( 2x - 3y = 12 \) in slope-intercept form, which is:
+
+\[
+y = mx + b
+\]
+
+where \( m \) is the slope of the line and \( b \) is the y-intercept. We begin by isolating \( y \).
+
+Starting with the equation:
+
+\[
+2x - 3y = 12
+\]
+
+Subtract \( 2x \) from both sides:
+
+\[
+-3y = -2x + 12
+\]
+
+Now, divide through by \( -3 \) to solve for \( y \):
+
+\[
+y = \frac{2}{3}x - 4
+\]
+
+From this equation, we can see that the slope \( m \) is:
+
+\[
+m = \frac{2}{3}
+\]
+
+Thus, the slope of the line is \( \frac{2}{3} \).
+
+
+\subsection*{Slope at a Specific Point}
+
+Next, we are asked to find the slope at the point \( (x = -3, y = 1) \). However, the slope of a straight line is constant, meaning it does not depend on the specific point. Since the equation \( 2x - 3y = 12 \) represents a straight line, the slope at any point on this line is the same.
+
+Therefore, the slope at the point \( (x = -3, y = 1) \) is the same as the slope of the line, which is:
+
+\[
+m = \frac{2}{3}
+\]
+
+
+The slope of the line given by the equation \( 2x - 3y = 12 \) is \( \frac{2}{3} \), and the slope at the point \( (x = -3, y = 1) \) is also \( \frac{2}{3} \).
+
+%%%
+\section{Functions}
+
+\subsection{Functions Evaluation}
+
+The process of evaluating a function involves substituting specific values for the independent variable \( x \) into the function's expression and calculating the resulting output. If \( f(x) \) is a function, the value of the function at a specific point \( x = a \) is denoted as \( f(a) \), and is computed by substituting \( x = a \) into the expression for \( f(x) \).
+
+To evaluate a function \( f(x) \) at a specific value \( x = a \):
+\begin{enumerate}
+    \item Substitute the given value of \( x \) into the expression for \( f(x) \).
+    \item Simplify the expression, if necessary, to find the value of the function at that point.
+\end{enumerate}
+
+For example, if \( f(x) = 2x + 3 \), and we want to evaluate the function at \( x = 4 \), we substitute \( x = 4 \) into the expression:
+\[
+f(4) = 2(4) + 3 = 8 + 3 = 11
+\]
+Thus, \( f(4) = 11 \).
+
+
+\subsection*{Evaluating Functions \( f(x) = \frac{1}{x+1} \)}
+
+Consider the function:
+\[
+f(x) = \frac{1}{x+1}
+\]
+
+Now, perform the following evaluations:
+
+\begin{enumerate}
+    \item \textbf{Find \( f(0) \):}
+    \[
+    f(0) = \frac{1}{0 + 1} = \frac{1}{1} = 1
+    \]
+    Therefore, \( f(0) = 1 \).
+    
+    \item \textbf{Find \( f(-1) \):}
+    \[
+    f(-1) = \frac{1}{-1 + 1} = \frac{1}{0}
+    \]
+
+    \item \textbf{Find \( f(t) \):}
+    \[
+    f(t) = \frac{1}{t + 1}
+    \]
+
+    \item \textbf{Find \( f(x + h) \):}
+    \[
+    f(x + h) = \frac{1}{(x + h) + 1} = \frac{1}{x + h + 1}
+    \]
+
+    \item \textbf{Find \( \frac{f(x + h) - f(x)}{h} \):}
+    First, we need to find \( f(x + h) \) and \( f(x) \).
+    \[
+    f(x + h) = \frac{1}{x + h + 1}, \quad f(x) = \frac{1}{x + 1}
+    \]
+    Now, we compute the difference:
+    \[
+    f(x + h) - f(x) = \frac{1}{x + h + 1} - \frac{1}{x + 1}
+    \]
+    To subtract these fractions, we need a common denominator:
+    \[
+    f(x + h) - f(x) = \frac{(x + 1) - (x + h + 1)}{(x + h + 1)(x + 1)} = \frac{(x + 1) - (x + 1 + h)}{(x + h + 1)(x + 1)} = \frac{-h}{(x + h + 1)(x + 1)}
+    \]
+    Now, divide by \( h \):
+    \[
+    \frac{f(x + h) - f(x)}{h} = \frac{-h}{h(x + h + 1)(x + 1)} = \frac{-1}{(x + h + 1)(x + 1)}
+    \]
+    Therefore, the difference quotient is:
+    \[
+    \frac{f(x + h) - f(x)}{h} = \frac{-1}{(x + h + 1)(x + 1)}
+    \]
+\end{enumerate}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Definitions}
+
+\begin{definition}[Function]
+
+A function is a relation between a set of inputs (the domain) and a set of possible outputs (the range), such that each input is related to exactly one output. In other words, for every \( x \) in the domain, there exists a unique corresponding \( y \) in the range.
+
+\end{definition}
+
+
+
+\begin{definition}
+[Domain of a Function]
+
+The domain of a function is the set of all possible input values (usually denoted \( x \)) that will produce a valid output. The domain may be restricted by various factors, such as division by zero or the need for the input to be a real number.
+\end{definition}
+
+\begin{example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Find the domain for following functions: 
+\begin{itemize}
+\item \( f(x) = \sqrt{9 - x^2}\)
+\item \( f(x) = \frac{1}{16 - x^2}\) 
+\item \( f(x) = \sqrt{\frac{5}{x^2 - 36}}\) 
+\end{itemize}
+
+\end{example}
+
+\subsubsection*{Solution:}
+
+
+\textbf{Domain of \( f(x) = \sqrt{9 - x^2} \)}
+
+For a square root function, the expression inside the square root must be non-negative for the function to be defined. Therefore, we need:
+\[
+9 - x^2 \geq 0.
+\]
+
+Solving this inequality:
+\[
+9 \geq x^2 \quad \Rightarrow \quad -3 \leq x \leq 3.
+\]
+
+Thus, the domain of \( f(x) = \sqrt{9 - x^2} \) is:
+\[
+\boxed{[-3, 3]}.
+\]
+
+\textbf{Domain of \( f(x) = \frac{1}{16 - x^2} \)}
+
+For a rational function, the denominator must not be zero. Therefore, we need to find the values of \( x \) for which the denominator is not zero. We set the denominator equal to zero and solve for \( x \):
+\[
+16 - x^2 = 0 \quad \Rightarrow \quad x^2 = 16 \quad \Rightarrow \quad x = \pm 4.
+\]
+
+Therefore, the domain of \( f(x) = \frac{1}{16 - x^2} \) is all real numbers except \( x = 4 \) and \( x = -4 \). In interval notation, the domain is:
+\[
+\boxed{(-\infty, -4) \cup (-4, 4) \cup (4, \infty)}.
+\]
+
+\textbf{Domain of \( f(x) = \sqrt{\frac{5}{x^2 - 36}} \)}
+
+For a square root function, the expression inside the square root must be non-negative. Additionally, the denominator must not be zero. Therefore, we need to find the values of \( x \) such that:
+\[
+\frac{5}{x^2 - 36} \geq 0 \quad \text{and} \quad x^2 - 36 \neq 0.
+\]
+
+First, solve for when the denominator is zero:
+\[
+x^2 - 36 = 0 \quad \Rightarrow \quad x^2 = 36 \quad \Rightarrow \quad x = \pm 6.
+\]
+Thus, \( x = \pm 6 \) must be excluded from the domain.
+
+Next, solve the inequality:
+\[
+x^2 - 36 > 0.
+\]
+This inequality holds when:
+\[
+x > 6 \quad \text{or} \quad x < -6.
+\]
+
+Therefore, the domain of \( f(x) = \sqrt{\frac{5}{x^2 - 36}} \) is:
+\[
+\boxed{(-\infty, -6) \cup (6, \infty)}.
+\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{definition}
+[ange of a Function]
+
+The range of a function is the set of all possible output values (usually denoted \( y \)) that the function can produce. This depends on the form of the function and the restrictions on its domain.
+
+\end{definition}
+
+\subsection{The Vertical Line Test}
+
+The vertical line test is a method used to determine whether a graph represents a function. The test states that:
+\begin{itemize}
+    \item If any vertical line intersects the graph of a relation at more than one point, then the relation is not a function.
+    \item If every vertical line intersects the graph at most once, then the relation is a function.
+\end{itemize}
+
+This test helps to identify whether the graph represents a function, as it ensures that for each \( x \)-value (input), there is only one \( y \)-value (output).
+
+
+To better understand these concepts, we can look at some graphs that demonstrate the vertical line test and the domain and range.
+
+\subsection*{Example 1: A Function}
+
+Consider the function \( f(x) = x^2 \), which is a parabola. Let's graph it and apply the vertical line test.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( y \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-1, ymax=9,
+    title = {Graph of \( y = x^2 \)},
+    domain=-3:3
+]
+    \addplot[blue, thick] {x^2};
+    % Vertical line for test
+    % \addplot[red, thick, domain=-3:3] {4};
+    \node at (axis cs:2,3) {Vertical line};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+In the above graph of \( f(x) = x^2 \), every vertical line intersects the graph at exactly one point, thus passing the vertical line test. Therefore, this graph represents a function.
+
+\subsection*{Example 2: Not a Function}
+
+Now, consider the graph of the relation \( y^2 = x \), which is a sideways parabola. We will apply the vertical line test to this graph.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( y \),
+    grid = both, 
+    xmin=-1, xmax=4, ymin=-2, ymax=2,
+    title = {Graph of \( y^2 = x \)},
+    domain=-1:4
+]
+    \addplot[blue, thick] {sqrt(x)};
+    \addplot[blue, thick] {-sqrt(x)};
+    % Vertical line for test
+    % \addplot[red, thick, domain=-1:4] {1};
+    \node at (axis cs:2,1.5) {Vertical line};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+In the graph of \( y^2 = x \), a vertical line intersects the graph at two points, which means this relation does not pass the vertical line test and is \textit{not} a function.
+
+%%%%%%%%%%%%%%%%%%%%%
+Functions can be classified as \textit{even} or \textit{odd} based on their symmetry properties. Understanding whether a function is even or odd can help in graphing, analyzing, and solving various mathematical problems. 
+
+\section{Even and Odd Functions}
+
+\begin{definition}[Even Functions]
+
+A function \( f(x) \) is called \textit{even} if its graph is symmetric about the y-axis. Mathematically, a function \( f(x) \) is even if for all \( x \) in the domain of \( f \), the following condition holds:
+
+\[
+f(-x) = f(x)
+\]
+\end{definition}
+
+\subsection{Properties of Even Functions}
+\begin{itemize}
+    \item The graph of an even function is symmetric about the y-axis.
+    \item If a function is even, it satisfies the equation \( f(-x) = f(x) \) for all values of \( x \) in its domain.
+    \item The sum or difference of two even functions is also an even function.
+    \item The product of two even functions is also an even function.
+\end{itemize}
+
+\subsection*{Example of an Even Function}
+
+An example of an even function is the quadratic function \( f(x) = x^2 \). Let’s check if this function is even by verifying whether \( f(-x) = f(x) \):
+
+\[
+f(-x) = (-x)^2 = x^2 = f(x)
+\]
+
+Since \( f(-x) = f(x) \), the function \( f(x) = x^2 \) is an even function.
+
+\subsection*{Graph of \( f(x) = x^2 \)}
+
+Below is the graph of \( f(x) = x^2 \), which is symmetric about the y-axis.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-5, xmax=5, ymin=-1, ymax=25,
+    title = {Graph of \( f(x) = x^2 \)}
+]
+    \addplot[blue, thick] {x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{definition}
+[Odd Functions]
+A function \( f(x) \) is called \textit{odd} if its graph is symmetric about the origin. Mathematically, a function \( f(x) \) is odd if for all \( x \) in the domain of \( f \), the following condition holds:
+
+\[
+f(-x) = -f(x)
+\]
+
+\end{definition}
+\subsection{Properties of Odd Functions}
+\begin{itemize}
+    \item The graph of an odd function is symmetric about the origin.
+    \item If a function is odd, it satisfies the equation \( f(-x) = -f(x) \) for all values of \( x \) in its domain.
+    \item The sum or difference of two odd functions is also an odd function.
+    \item The product of an odd function and an even function is an odd function.
+\end{itemize}
+
+\subsection*{Example of an Odd Function}
+
+An example of an odd function is the cubic function \( f(x) = x^3 \). Let’s check if this function is odd by verifying whether \( f(-x) = -f(x) \):
+
+\[
+f(-x) = (-x)^3 = -x^3 = -f(x)
+\]
+
+Since \( f(-x) = -f(x) \), the function \( f(x) = x^3 \) is an odd function.
+
+\subsection*{Graph of \( f(x) = x^3 \)}
+
+Below is the graph of \( f(x) = x^3 \), which is symmetric about the origin.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-5, xmax=5, ymin=-150, ymax=150,
+    title = {Graph of \( f(x) = x^3 \)}
+]
+    \addplot[red, thick] {x^3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+\begin{itemize}
+    \item A function is \textit{even} if \( f(-x) = f(x) \) for all \( x \) in its domain. The graph is symmetric about the y-axis.
+    \item A function is \textit{odd} if \( f(-x) = -f(x) \) for all \( x \) in its domain. The graph is symmetric about the origin.
+\end{itemize}
+
+
+
+\subsection{Graphs of Common Functions}
+
+This part contains the graphs of the following functions:
+\begin{itemize}
+    \item \( f(x) = x \)
+    \item \( f(x) = x^2 \)
+    \item \( f(x) = x^3 \)
+    \item \( f(x) = |x| \)
+    \item \( f(x) = \sqrt{x} \)
+    \item \( f(x) = \frac{1}{x} \)
+    \item \( f(x) = \frac{1}{|x|^2} \)
+\end{itemize}
+
+
+\subsubsection*{Graph of \( f(x) = x \)}
+
+The graph of the function \( f(x) = x \) is a straight line passing through the origin with a slope of 1.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=-3, xmax=3, ymin=-3, ymax=3,
+    title = {Graph of \( f(x) = x \)}
+]
+    \addplot[blue, thick] {x};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Graph of \( f(x) = x^2 \)}
+
+The graph of \( f(x) = x^2 \) is a parabola opening upwards.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=-3, xmax=3, ymin=-1, ymax=9,
+    title = {Graph of \( f(x) = x^2 \)}
+]
+    \addplot[blue, thick] {x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( f(x) = x^3 \)}
+
+The graph of \( f(x) = x^3 \) is an odd function with symmetric behavior about the origin.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=-3, xmax=3, ymin=-27, ymax=27,
+    title = {Graph of \( f(x) = x^3 \)}
+]
+    \addplot[blue, thick] {x^3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( f(x) = |x| \)}
+
+The graph of \( f(x) = |x| \) is a "V"-shaped graph, representing the absolute value function.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=-3, xmax=3, ymin=0, ymax=3,
+    title = {Graph of \( f(x) = |x| \)}
+]
+    \addplot[blue, thick] {abs(x)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( f(x) = \sqrt{x} \)}
+
+The graph of \( f(x) = \sqrt{x} \) is a curve that only exists for \( x \geq 0 \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=0, xmax=3, ymin=0, ymax=2,
+    title = {Graph of \( f(x) = \sqrt{x} \)}
+]
+    \addplot[blue, thick] {sqrt(x)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( f(x) = \frac{1}{x} \)}
+
+The graph of \( f(x) = \frac{1}{x} \) has two asymptotes: one at \( x = 0 \) and the other as \( x \to \pm \infty \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=-3, xmax=3, ymin=-5, ymax=5,
+    title = {Graph of \( f(x) = \frac{1}{x} \)}
+]
+    % \addplot[blue, thick] {1/x};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( f(x) = \frac{1}{x^2} \)}
+
+The graph of \( f(x) = \frac{1}{|x|^2} \) has a vertical asymptote at \( x = 0 \) and approaches zero as \( x \to \pm \infty \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = \( x \),
+    ylabel = \( f(x) \),
+    grid = both,
+    xmin=-3, xmax=3, ymin=0, ymax=5,
+    title = {Graph of \( f(x) = \frac{1}{|x|^2} \)}
+]
+    % \addplot[blue, thick] {1/(x^2)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+%%%
+
+\subsection{Quadratic Functions}
+
+\begin{definition}
+
+% A quadratic function is a polynomial function of degree 2, and it has the general form:
+
+\[
+f(x) = ax^2 + bx + c
+\]
+
+\end{definition}
+The graph of a quadratic function is a parabola, and its shape depends on the coefficient \( a \). If \( a > 0 \), the parabola opens upwards; if \( a < 0 \), it opens downwards. The vertex of the parabola is the point where the graph reaches its minimum or maximum value.
+
+Here we explore different types of quadratic functions, including the basic quadratic function \( f(x) = x^2 \), scaled versions, and transformations.
+
+\subsection*{Graph of \( f(x) = x^2 \)}
+
+The graph of the basic quadratic function \( f(x) = x^2 \) is a parabola with its vertex at the origin \( (0, 0) \). The parabola opens upwards because the coefficient of \( x^2 \) is positive.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-1, ymax=9,
+    title = {Graph of \( f(x) = x^2 \)}
+]
+    \addplot[blue, thick] {x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Graph of \( f(x) = ax^2 \) for Various Values of \( a \)}
+
+In this section, we discuss how the value of \( a \) affects the graph of \( f(x) = ax^2 \). The value of \( a \) controls the "width" and the direction in which the parabola opens.
+
+\subsubsection*{Case 1: \( a = -1 \)}
+
+When \( a = -1 \), the graph of \( f(x) = -x^2 \) is an upside-down parabola with a vertex at \( (0, 0) \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-9, ymax=1,
+    title = {Graph of \( f(x) = -x^2 \)}
+]
+    \addplot[blue, thick] {-x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Case 2: \( -1 < a < 0 \)}
+
+For \( a \) between -1 and 0, the graph of \( f(x) = ax^2 \) is a vertically compressed parabola that opens downwards. The vertex remains at \( (0, 0) \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-2, ymax=2,
+    title = {Graph of \( f(x) = -0.5x^2 \)}
+]
+    \addplot[blue, thick] {-0.5*x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Case 3: \( 0 < a < 1 \)}
+
+For \( a \) between 0 and 1, the graph of \( f(x) = ax^2 \) is a vertically stretched parabola that opens upwards. The vertex remains at \( (0, 0) \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-0.5, ymax=3,
+    title = {Graph of \( f(x) = 0.5x^2 \)}
+]
+    \addplot[blue, thick] {0.5*x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Case 4: \( a > 1 \)}
+
+When \( a > 1 \), the graph of \( f(x) = ax^2 \) becomes even more vertically stretched, and it opens upwards. The vertex remains at \( (0, 0) \).
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-1, ymax=10,
+    title = {Graph of \( f(x) = 2x^2 \)}
+]
+    \addplot[blue, thick] {2*x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Horizontal Transformations of \( f(x) = x^2 \)}
+
+The graph of \( f(x) = x^2 \) can also undergo horizontal transformations. These transformations shift the graph to the left or right.
+
+\subsubsection*{Case 1: \( f(x+2) \)}
+
+The function \( f(x+2) \) shifts the graph of \( f(x) = x^2 \) to the left by 2 units.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-5, xmax=1, ymin=-1, ymax=9,
+    title = {Graph of \( f(x+2) = (x+2)^2 \)}
+]
+    \addplot[blue, thick] {(x+2)^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Case 2: \( f(x-3) \)}
+
+The function \( f(x-3) \) shifts the graph of \( f(x) = x^2 \) to the right by 3 units.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-1, xmax=7, ymin=-1, ymax=9,
+    title = {Graph of \( f(x-3) = (x-3)^2 \)}
+]
+    \addplot[blue, thick] {(x-3)^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Vertical Transformations of \( f(x) = x^2 \)}
+
+In addition to horizontal transformations, vertical transformations can shift the graph of \( f(x) = x^2 \) up or down.
+
+\subsubsection*{Case 1: \( f(x) = x^2 + 3 \)}
+
+The function \( f(x) = x^2 + 3 \) shifts the graph of \( f(x) = x^2 \) upwards by 3 units.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=0, ymax=10,
+    title = {Graph of \( f(x) = x^2 + 3 \)}
+]
+    \addplot[blue, thick] {x^2 + 3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Case 2: \( f(x) = x^2 - 1 \)}
+
+The function \( f(x) = x^2 - 1 \) shifts the graph of \( f(x) = x^2 \) downwards by 1 unit.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-3, xmax=3, ymin=-2, ymax=8,
+    title = {Graph of \( f(x) = x^2 - 1 \)}
+]
+    \addplot[blue, thick] {x^2 - 1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Case 3: \( f(x) = (x-2)^2 + 3 \)}
+
+The function \( f(x) = (x-2)^2 + 3 \) shifts the graph of \( f(x) = x^2 \) to the right by 2 units and upwards by 3 units.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle, 
+    xlabel = \( x \), ylabel = \( f(x) \),
+    grid = both, 
+    xmin=-1, xmax=5, ymin=0, ymax=10,
+    title = {Graph of \( f(x) = (x-2)^2 + 3 \)}
+]
+    \addplot[blue, thick] {(x-2)^2 + 3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+g
+
+\subsection{Quotient of Two Functions}
+
+Given two functions \( f(x) \) and \( g(x) \), their quotient is defined as:
+
+\[
+\frac{f(x)}{g(x)} = \frac{x^2 - 2}{x + 2}
+\]
+
+In this case, we have:
+\[
+f(x) = x^2 - 2 \quad \text{and} \quad g(x) = x + 2
+\]
+
+The domain of the quotient function \( \frac{f(x)}{g(x)} \) is determined by the domain of both \( f(x) \) and \( g(x) \), with the restriction that \( g(x) \neq 0 \), since division by zero is undefined. Therefore, we must exclude values of \( x \) where \( g(x) = 0 \). Solving \( g(x) = x + 2 = 0 \) gives \( x = -2 \). Hence, the domain of \( \frac{f(x)}{g(x)} \) is all real numbers except \( x = -2 \).
+
+\subsection*{Finding the Quotient Function \( \frac{f(x)}{g(x)} \)}
+
+We now compute the quotient function \( \frac{f(x)}{g(x)} \):
+
+\[
+\frac{f(x)}{g(x)} = \frac{x^2 - 2}{x + 2}
+\]
+
+This is the simplified form of the quotient. It is important to note that this function is undefined at \( x = -2 \), as discussed earlier.
+
+\subsection*{Evaluating \( \frac{f(x)}{g(x)} \) at \( x = 2 \)}
+
+To evaluate \( \frac{f}{g}(2) \), we substitute \( x = 2 \) into the quotient function:
+
+\[
+\frac{f}{g}(2) = \frac{f(2)}{g(2)} = \frac{2^2 - 2}{2 + 2} = \frac{4 - 2}{4} = \frac{2}{4} = \frac{1}{2}
+\]
+
+Thus, \( \frac{f}{g}(2) = \frac{1}{2} \).
+
+\subsection*{Evaluating \( \frac{f(x)}{g(x)} \) at \( x = t \)}
+
+To evaluate \( \frac{f}{g}(t) \), we substitute \( x = t \) into the quotient function:
+
+\[
+\frac{f}{g}(t) = \frac{f(t)}{g(t)} = \frac{t^2 - 2}{t + 2}
+\]
+
+Thus, the value of the quotient function at \( x = t \) is:
+
+\[
+\frac{f}{g}(t) = \frac{t^2 - 2}{t + 2}
+\]
+
+
+The quotient of two functions \( f(x) = x^2 - 2 \) and \( g(x) = x + 2 \) is given by:
+
+\[
+\frac{f(x)}{g(x)} = \frac{x^2 - 2}{x + 2}
+\]
+
+We computed:
+\[
+\frac{f}{g}(2) = \frac{1}{2}
+\]
+and the general form for \( \frac{f}{g}(t) \) is:
+
+\[
+\frac{f}{g}(t) = \frac{t^2 - 2}{t + 2}
+\]
+
+The domain of this function is all real numbers except \( x = -2 \), where the function is undefined due to division by zero.
+
+
+
+\subsection{Applications}
+
+In business economics, functions can be used to underst the relationship between costs, revenues, and profits. 
+% \subsection{Fixed Costs}
+
+% Fixed costs are the costs that do not change with the level of output produced by a company. Common examples of fixed costs include rent, salaries of permanent employees, and insurance premiums. 
+
+% \subsection{Marginal Costs}
+
+% Marginal cost refers to the additional cost incurred by producing one more unit of output.
+ % It is a key concept in microeconomics that helps businesses determine the cost efficiency of increasing production. The marginal cost is the derivative of the total cost function with respect to the quantity produced.
+
+% Mathematically, marginal cost is expressed as:
+
+% \[
+% MC(x) = \frac{dC(x)}{dx}
+% \]
+
+% where \( C(x) \) is the total cost function, and \( x \) is the quantity of output produced.
+
+% The marginal cost helps a company decide whether increasing production is profitable. If the marginal cost is greater than the price at which the product is sold, it might not be profitable to increase production.
+
+\begin{definition}
+[Cost Function]
+
+The cost function, denoted as \( C(x) \), represents the total cost incurred by a company to produce \( x \) units of output. 
+
+\[
+C(x) = C_{\text{fixed}} + C_{\text{variable}}(x)
+\]
+
+where:
+\begin{itemize}
+\item \( C_{\text{fixed}} \) is the fixed cost (constant),
+\item \( C_{\text{variable}}(x) \) is the variable cost, which typically depends on the number of units produced, \( x \).
+\end{itemize}
+
+\end{definition}
+
+For example, a simple cost function might look like:
+
+\[
+C(x) = 500 + 10x
+\]
+
+where 500 is the fixed cost, and \( 10x \) represents the variable cost per unit produced.
+
+\begin{definition}
+[Revenue Function]
+
+The revenue function, denoted as \( R(x) \), represents the total revenue generated by selling \( x \) units of output at a price \( p(x) \) per unit. The revenue function is given by the product of the price per unit and the quantity of output sold.
+
+\[
+R(x) = p(x) \cdot x
+\]
+
+where:
+\begin{itemize}
+\item \( p(x) \) is the price per unit, which can be constant or variable depending on the market conditions,
+\item \( x \) is the number of units sold.
+\end{itemize}
+
+\end{definition}
+
+For example, if the price per unit is constant at \( p = 20 \), the revenue function would be:
+
+\[
+R(x) = 20x
+\]
+
+This means that for every unit sold, the company generates 20 units of revenue.
+
+\begin{definition}
+[Profit Function]
+
+
+The profit function, denoted as \( P(x) \), represents the difference between total revenue and total cost. It shows how much money a company makes (or loses) from producing and selling \( x \) units of output.
+
+\[
+P(x) = R(x) - C(x)
+\]
+
+where:
+\begin{itemize}
+\item \( R(x) \) is the revenue function,
+\item \( C(x) \) is the cost function.
+\end{itemize}
+\end{definition}
+
+For example, if the revenue function is \( R(x) = 20x \) and the cost function is \( C(x) = 500 + 10x \), the profit function would be:
+
+\[
+P(x) = (20x) - (500 + 10x) = 10x - 500
+\]
+
+This profit function shows that the company makes a profit of \( 10x - 500 \) when producing and selling \( x \) units. The company will break even when \( P(x) = 0 \), which occurs when:
+
+\[
+10x - 500 = 0 \quad \Rightarrow \quad x = 50
+\]
+
+Thus, the company needs to sell at least 50 units to cover its costs and start making a profit.
+
+\subsubsection*{Example }
+Write a linear cost function for the following situations. 
+A ski resort charges a snowboard rental fee of 30 dollars
+plus 5 dollars per hour.
+\textbf{Solution}
+
+A linear cost function is typically written in the form:
+\[
+C(x) = mx + b
+\]
+where:
+- \( C(x) \) is the total cost,
+- \( m \) is the variable cost per unit of \( x \),
+- \( b \) is the fixed cost,
+- \( x \) is the number of hours.
+
+Therefore 
+
+\[
+C(x) = 5x + 30
+\]
+
+\subsubsection*{Example }
+Write a linear cost function for the following situations.
+A parking garage charges 7 dollars plus 50 cents per half$-$hour.
+
+
+
+\textbf{Solution}
+
+\[
+C(x) = 0.50x + 7
+\]
+
+

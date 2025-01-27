@@ -1,0 +1,281 @@
+\input{preamble.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+\usepackage{pgfplots}
+\usepackage{cancel}
+\usepackage{longtable}
+
+%====================================================================
+\begin{document}
+\doublespacing
+%====================================================================
+\input{frontpage.tex}
+\tableofcontents
+\clearpage
+%=====================================================================
+\newpage
+
+\input{week1.tex}
+
+\newpage
+
+\input{week2.tex}
+% \input{week3.tex}
+
+\newpage
+\section{Limits}
+
+
+\begin{example}
+  \label{ex:num_lim}
+  What value $f(x) = x^{2}$ approaches to, when x approaches to 2.
+
+  In mathematical notation $f(x) \to ?$ when $x \to 2$
+\end{example}
+
+\textbf{Left-Hand Limit Table for \( f(x) = x^2 \) as \( x \to 2^{-} \)}
+
+\begin{longtable}{|c|c|}
+\hline
+\textbf{x} & \textbf{f(x) = \( x^2 \)} \\
+\hline
+\endfirsthead
+\hline
+\textbf{x} & \textbf{f(x) = \( x^2 \)} \\
+\hline
+\endhead
+1.9 & 3.61 \\
+\hline
+1.99 & 3.9601 \\
+\hline
+1.999 & 3.996001 \\
+\hline
+1.9999 & 3.99960001 \\
+\hline
+1.99999 & 3.9999600001 \\
+\hline
+\end{longtable}
+
+\textcolor{red}{We say that $f(x) \to 4 $ as $x \to 2^{-}$}
+
+Or
+
+\textcolor{red}{Equivalently $ lim_{x \to 2^{-}}f(x) = 4$}  
+
+\textbf{Right-Hand Limit Table for \( f(x) = x^2 \) as \( x \to 2^{+} \)}
+
+\begin{longtable}{|c|c|}
+\hline
+\textbf{x} & \textbf{f(x) = \( x^2 \)} \\
+\hline
+\endfirsthead
+\hline
+\textbf{x} & \textbf{f(x) = \( x^2 \)} \\
+\hline
+\endhead
+2.1 & 4.41 \\
+\hline
+2.01 & 4.0401 \\
+\hline
+2.001 & 4.004001 \\
+\hline
+2.0001 & 4.00040001 \\
+\hline
+2.00001 & 4.0000400001 \\
+\hline
+\end{longtable}
+
+\textcolor{red}{We say that $f(x) \to 4 $ as $x \to 2^{+}$}
+
+Or
+
+\textcolor{red}{Equivalently $ lim_{x \to 2^{+}}f(x) = 4$}  
+
+
+\textcolor{cyan}{ $ lim_{x \to 2^{+}}f(x) = lim_{x \to 2^{-}}f(x) = 4$}  
+
+\textcolor{cyan}{ we conclude that $ lim_{x \to 2}f(x) =  4$}  
+
+We say that limit of $f(x)=x^{2}$ is 4 when $x$ approaches to 2.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{"./fig/num_lim_exm_1.png"}
+  \caption{\label{fig:fig_label} Figure corresponding to example \eqref{ex:num_lim} Taken form the textbook, page 135. }
+\end{figure}
+
+
+\begin{example}
+  \label{ex:num_lim2}
+What value  $f(x) = \frac{x^3 - 2x^2}{x - 2} $ approaches to, when x approaches to 2.
+
+\end{example}
+\textbf{Left-hand Limit Table for \( f(x) = \frac{x^3 - 2x^2}{x - 2} \) as \( x \to 2 \)}
+
+\begin{longtable}{|c|c|}
+\hline
+\textbf{x} & \textbf{f(x) = \( \frac{x^3 - 2x^2}{x - 2} \)} \\
+\hline
+\endfirsthead
+\hline
+\textbf{x} & \textbf{f(x)} \\
+\hline
+\endhead
+1.9 & 3.61 \\
+\hline
+1.99 & 3.9601 \\
+\hline
+1.999 & 3.996001 \\
+\hline
+1.9999 & 3.99960001 \\
+\hline
+1.99999 & 3.9999600001 \\
+\hline
+\end{longtable}
+
+\textcolor{red}{We say that $f(x) \to 4 $ as $x \to 2^{-}$}
+
+Or
+
+\textcolor{red}{Equivalently $ lim_{x \to 2^{-}}f(x) = 4$}  
+\textbf{Right-hand Limit Table for \( f(x) = \frac{x^3 - 2x^2}{x - 2} \) as \( x \to 2 \)}
+
+\begin{longtable}{|c|c|}
+\hline
+\textbf{x} & \textbf{f(x) = \( \frac{x^3 - 2x^2}{x - 2} \)} \\
+\hline
+\endfirsthead
+\hline
+\textbf{x} & \textbf{f(x)} \\
+\hline
+\endhead
+2.1 & 4.41 \\
+\hline
+2.01 & 4.0401 \\
+\hline
+2.001 & 4.004001 \\
+\hline
+2.0001 & 4.00040001 \\
+\hline
+2.00001 & 4.0000400001 \\
+\hline
+\end{longtable}
+
+\textcolor{red}{We say that $f(x) \to 4 $ as $x \to 2^{+}$}
+
+Or
+
+\textcolor{red}{Equivalently $ lim_{x \to 2^{+}}f(x) = 4$}  
+
+\textcolor{cyan}{ $ lim_{x \to 2^{+}}f(x) = lim_{x \to 2^{-}}f(x) = 4$}  
+
+\textcolor{cyan}{ we conclude that $ lim_{x \to 2}f(x) =  4$}  
+
+We say that limit of $f(x)=x^{2}$ is 4 when $x$ approaches to 2.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{"./fig/num_lim_exm_2.png"}
+  \caption{\label{fig:fig_label2} Figure corresponding to example \eqref{ex:num_lim2} Taken form the textbook, page 136. }
+\end{figure}
+
+\begin{example}
+  Find algebraically the limit of  $f(x) = \frac{x^3 - 2x^2}{x - 2} $ when $x \to  2$
+
+  
+
+\end{example}
+
+\textbf{Solution}
+
+
+
+We can simplify the expression for \( f(x) \),
+by factoring the numerator:
+\[
+f(x) = \frac{x^2(x - 2)}{x - 2}
+\]
+For \( x \neq 2 \), the expression simplifies to:
+
+
+\[
+f(x) = \frac{x^2 \cancel{(x - 2)}}{ \cancel{x - 2}}
+\]
+
+\[
+f(x) = x^2
+\]
+which is the same now as example \eqref{ex:num_lim}
+
+Therefore, we conclude that
+\[
+\lim_{x \to 2} f(x) = 2^2 = 4
+\]
+
+
+
+No we are ready to define limite formally.
+
+\begin{definition}[Left-Hand Limit]
+The left-hand limit of \( f(x) \) as \( x \to a \) is defined as:
+\[
+\lim_{x \to a^-} f(x) = L
+\]
+which means that as \( x \) approaches \( a \) from the left, the function \( f(x) \) approaches \( L \).
+
+\end{definition}
+
+\begin{definition}[Right-Hand Limit]
+
+The right-hand limit of \( f(x) \) as \( x \to a \) is defined as:
+\[
+\lim_{x \to a^+} f(x) = L
+\]
+which means that as \( x \) approaches \( a \) from the right, the function \( f(x) \) approaches \( L \).
+
+\end{definition}
+
+
+
+\begin{definition}[Limit]
+
+The limit of \( f(x) \) as \( x \to a \) is defined as:
+\[
+\lim_{x \to a} f(x) = L
+\]
+which means that as \( x \) approaches \( a \) from both left and right, the function \( f(x) \) approaches \( L \), i.e.
+
+\[
+\lim_{x \to a^{-}} f(x) = \lim_{x \to a^{+}} f(x) = L
+\]
+
+\end{definition}
+
+
+\begin{example}
+  Evaluate the following limits. Try to plot functions in each example
+  \begin{itemize}
+  \item \( \lim_{x \to 2} \frac{x^{2} -4}{x-2} \)
+  \item \( \lim_{x \to 2} \frac{x-2}{x^{2} -4} \)
+  \end{itemize}
+
+  \begin{example}
+   $f(x) = \frac{1}{x}$ when $x\to 0$
+
+  \end{example}
+
+
+  \begin{example}
+   $f(x) = x$ when $x<0$
+
+   $f(x) = x+1$ when $x \ge 0$
+
+  \end{example}
+
+  
+\end{example}
+
+\end{document}
+

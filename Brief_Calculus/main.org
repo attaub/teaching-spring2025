@@ -1,0 +1,19 @@
+#+TITLE: Brief-Calculus
+#+AUTHOR: ATTA
+#+STARTUP: overview
+#+OPTIONS: toc:2
+
+
+* HW2
+- Graph of cubic equations
+- Graph of quartic equations
+- Find the degree and leading coefficient of a polynomial by looking at its graph
+- Horizontal and vertical asymptotes
+- Graph a rational function with removable discontinuity
+- Graph exponential functions
+- Solving exponential equations
+- Loarithms
+- Logarithmic functions
+- Natural Logarithms
+- Applications, Word Problems
+* 

@@ -1,0 +1,46 @@
+#+TITLE: 
+#+AUTHOR: ATTA
+#+STARTUP: overview
+#+OPTIONS: toc:2
+
+
+2. A firm produces a product that has the production cost function ​C(x)=105x+2485 and the revenue function ​R(x)=140x. No more than 38 units can be sold. Find and analyze the​ break-even quantity, then find the profit function.
+
+
+4. In 1960​, there were 245 comma 205 immigrants admitted to a country. In 2002​, the number was 1 comma 128 comma 037. a. Assuming that the change in immigration is​ linear, write an equation expressing the number of​ immigrants, y, in terms of​ t, the number of years after 1900. b. Use your result in part a to predict the number of immigrants admitted to the country in 2018. c. Considering the value of the​ y-intercept in your answer to part a​, discuss the validity of using this equation to model the number of immigrants throughout the entire 20th century.
+
+
+
+12. (20)Assume that the situation can be expressed as a linear cost function. Find the cost function. Fixed cost is ​$100​; 50 items cost ​$3,  100 to produce
+
+13. Assume that the situation can be expressed as a linear cost function. Find the cost function in this case. Marginal​ cost: ​$10​; 180 items cost ​$6000 to produce.
+
+14. Let one​ week's supply and demand functions for gasoline be given by p = D (q)=288 - 5/4q
+    and p = S(q)= 3/4 q​, where p is the price in dollars and q is the number of​ 42-gallon barrels.
+    ​(a) Graph these equations on the same axes. ​
+    (b) Find the equilibrium quantity. ​
+    (c) Find the equilibrium price.
+
+15. To produce x units of a religious medal costs Upper C left parenthesis x right parenthesis equals 14 x plus 28. The revenue is Upper R left parenthesis x right parenthesis equals 28 x. Both cost and revenue are in dollars.
+    a. Find the​ break-even quantity.
+    b. Find the profit from 340 units.
+    c. Find the number of units that must be produced for a profit of ​$140.
+
+16. Given a parabola, determine if it is function using vertical line test.
+
+19. If f is even or odd?
+
+20. Question content area top Part 1 A rectangular field is to have an area of 200 m Superscript 2. a. Write the​ perimeter, P, of the field as a function of the​ width, W. b. Find the domain of the function in part a. c. Use a graphing calculator to sketch the graph of the function in part a. d. Describe what the graph found in part c tells you about how the perimeter of the field varies with the width.
+
+21. Question content area top Part 1 How does the value of a affect the graph of yequalsaxsquared​? Discuss the case for agreater than or equals1 and 0less than or equalsaless than or equals1.
+
+22. Match the correct graph to the function without using your calculator.​ Then, if you have a graphing​ calculator, use it to check your answers. y equals x squared minus 1, y=(x+1)^2-2
+
+23. Graphing a parabola of an equation
+
+24. A charter flight charges a fare of​ $300 per person plus ​$40 per person for each unsold seat on the plane. The plane holds 100 passengers. Let x represent the number of unsold seats. Find an expression for the total revenue received for the flight​ R(x).
+
+25. If an object is thrown upward with an initial velocity of 384 ​ft/second, then its height after t seconds is given by the following equation. h equals 384 t minus 32 t squared a. Find the maximum height attained by the object. b. Find the number of seconds it takes the object to hit the ground.
+
+26. A college is planning to construct a rectangular parking lot on land bordered on one side by a highway. The plan is to use 720 feet of fencing to fence off the other three sides. What dimensions should the lot have if the enclosed area is to be a​ maximum?
+   
